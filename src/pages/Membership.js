@@ -42,7 +42,7 @@ const Membership = ({ isOpen, onClose }) => {
       try {
         setSubmitting(true);
         const response = await axios.post(
-          "https://mcstm.onrender.com/api/member/membership",
+          "http://localhost:8000/api/member/membership",
           values
         );
         console.log(response.data);
